@@ -27,7 +27,7 @@
 //    Hello World!
 
 // PUT YOUR CODE HERE
-console.log("Q1-------Start---------");
+console.log("Q1 for-------Start---------");
 function repeatHelloWorld(times){
     for(let i = 0; i < times ; i++){
         console.log("Hello World!");
@@ -36,6 +36,21 @@ function repeatHelloWorld(times){
 
 repeatHelloWorld(3);
 console.log("Q1-------End---------");
+console.log();
+
+console.log("Q1 while-------Start---------");
+function repeatHelloWorldWhile(times){
+    let i = 0
+    let flag = true;
+    while(flag){
+        if(i === times){ break;}
+        console.log("Hello World!");
+        i++;
+    }
+}
+
+repeatHelloWorldWhile(3);
+console.log("Q1 While-------End---------");
 console.log();
 // ---------- QUESTION 2 ----------
 // Write a function called 'pyramidCounting' that takes 1 integer parameter and returns the sum of all of the numbers between 0 and the parameter.
@@ -61,6 +76,22 @@ console.log(pyramidCounting(4));
 console.log("Q2-------End---------");
 console.log();
 
+console.log("Q2 while-------Start---------");
+function pyramidCountingWhile(times){
+    let i = 0
+    let flag = true;
+    let count = 0;
+    while(flag){
+        count += i;
+        if(i === times){ break;}
+        i++;
+    }
+    return count;
+}
+
+console.log("Q1 While: ",pyramidCountingWhile(4));
+console.log("Q1 While-------End---------");
+console.log();
 // ---------- QUESTION 3 ----------
 // Write a function called 'noVowels' that take a string parameter and removes vowels from that string using a loop.
 
