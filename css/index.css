@@ -1,0 +1,58 @@
+/* style.css */
+@import url('https://fonts.googleapis.com');
+/*
+    Change the background color of the page body.
+    Change the default text color.
+    STRETCH GOAL (optional):load in a font family from Google Fonts.
+*/
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: lightblue;
+    color: darkslategrey;
+  
+}
+/*STRETCH GOAL (optional): add a picture of yourself */
+.img-center {
+    text-align: center;
+}
+
+/*Change the font size, weight, and color of headings*/
+h1, h2 {
+  color: blue;
+  text-align: center;
+  
+}
+
+/*Transform the style of your Name at the top of the page*/
+#page-title {
+    font-family: "Lucida Console", monospace;
+}
+
+/*Change the alignment of the content of one of your sections*/
+#about {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+
+/*Add spacing (padding/margin) between sections*/
+div {
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.styled-block {
+    background-color: #f0f0f0;
+    border: 2px solid #333;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    width: 80%;
+}
+
+
+
