@@ -10,12 +10,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com" rel="stylesheet">
 
+    <nav class="sticky mainmenu">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#connect">Connect</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
 </head>
 <body>
-    <div class="img-center">
-        <img src="../javaScript-CTD/css/goku.jpg" alt="alternatetext">
-    </div>
-    <h1>Juan Carlos Ordonez</h1>
+    <header>
+        <div class="img-center">
+            <img src="../javaScript-CTD/css/goku.jpg" alt="alternatetext">
+        </div>
+        <h1>Juan Carlos Ordonez</h1>
+    </header>
+    
     <section id="about">
             <h2>About</h2>
             <p>I am spiderman in the morning at the night I am Batman. and on the weekends, I become superman. My life is boring I dont
@@ -23,30 +35,78 @@
                 I do not have time to learn codify in Javascript. I want to be a developer.
             </p>
     </section>
-    <section id="experience">
+    <section class="container" id="experience">
         <div>
-            <h2>Experience</h2>
+            <h2>Experience</h2> 
+        </div>
+        <div class="row">
+            <div class="column">
+                <div> <h3>Job Title</h3></div>
+            </div>
+            <div class="column">
+                <div><h3>Date Job</h3></div>
+            </div>
+            <div class="column">
+                <div><h3>Description</h3></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div>Java Developer</div>
+            </div>
+            <div class="column">
+                <div>March 10, 2020</div>
+            </div>
+            <div class="column">
+                <div>Java Developer</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div>Oracle Data analytics</div>
+            </div>
+            <div class="column">
+                <div>August 10, 2025</div>
+            </div>
+            <div class="column">
+                <div>Read and Write statistics</div>
+            </div>
         </div>
     </section>
-    <div class="inline-block-container">
-        <ul>
-            <li class="styled-block">HTML</li>
-            <li class="styled-block">CSS</li>
-            <li class="styled-block">JavaScript</li>
-            <li class="styled-block">Angular</li>
-            <li class="styled-block">EcmaScript</li>
-        </ul>
-    </div>
     <section id="connect">
         <h2>Connect</h2>
-        <div class="img-center">           
-            <a href="https://www.facebook.com">
-                <img src="../javaScript-CTD/css/facebook.jpg" alt="Faces and books" width="200">
-            </a>
-            <a href="https://www.youtube.com">
-                <img src="../javaScript-CTD/css/youtube.png" alt="Videos y reels" width="200">
-            </a>
+        <div class="row">
+            <div class="column">
+                <a href="https://www.facebook.com">
+                    <img src="../javaScript-CTD/css/facebook.jpg" alt="Faces and books" width="200">
+                </a>
+            </div>
+            <div class="column">
+                <a href="https://www.youtube.com">
+                    <img src="../javaScript-CTD/css/youtube.png" alt="Videos y reels" width="200">
+                </a>
+            </div>
+                <div class="column">
+                <a href="https://www.twitter.com">
+                    <img src="../javaScript-CTD/css/twitter.png" alt="Faces and books" width="200">
+                </a>
+            </div>
+                <div class="column">
+                <a href="https://www.tiktok.com">
+                    <img src="../javaScript-CTD/css/TikTok.png" alt="Faces and books" width="200">
+                </a>
+            </div>
         </div>
     </section>
+    <section id="skills">
+        <h2>Skills</h2>
+    </section>
+    <section>
+        <h2 id="projects">Projects</h2>
+        <ul></ul>
+    </section>
+    <footer>
+        <p>Footer</p>
+    </footer>
 </body>
 </html>

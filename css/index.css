@@ -1,3 +1,9 @@
+header {
+  background-color: #f6f7f5;
+  text-align: center;
+  padding: 10px;
+}
+
 /* style.css */
 @import url('https://fonts.googleapis.com');
 /*
@@ -11,10 +17,10 @@ body {
     color: darkslategrey;
   
 }
-/*STRETCH GOAL (optional): add a picture of yourself */
+/*STRETCH GOAL (optional): add a picture of yourself 
 .img-center {
     text-align: center;
-}
+}*/
 
 /*Change the font size, weight, and color of headings*/
 h1, h2 {
@@ -54,5 +60,42 @@ div {
     width: 80%;
 }
 
+/*Container Flex*/
+
+.container {
+    background-color: rgb(180, 231, 200);
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+/*We always need a footer*/
+footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 8px;
+}
+
+/**/
+.mainmenu {
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
 
 
+/*Menu sticky*/
+.sticky {
+    position: sticky;
+    top: 0;
+}
