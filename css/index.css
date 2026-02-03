@@ -99,3 +99,115 @@ footer {
     position: sticky;
     top: 0;
 }
+
+/*STRETCH GOAL: Grid layout this week, reformat one or both of your two flexbox sections (Experience or Connect) to be a grid layout instead to give yourself practice using grid.*/
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.container div {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+/*Menu*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+ul li {
+    float: left;
+}
+
+ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: #111111;
+}
+
+
+
+@media (max-width: 368px) {
+    body {
+        background: green;
+    }
+    h1, h2 {
+        font-size: 40px;
+        color: sienna;
+    }
+    p {
+        font-size: 15px;
+        color: black;
+    }
+
+
+}
+
+@media (min-width: 700px) {
+    header {
+        background-color: chartreuse;
+        text-align: center;
+        padding: 20px;
+    }
+
+    body {
+        background: pink;
+    }
+
+    h1 {
+        font-size: 40px;
+        color: blueviolet;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .container div {
+        background-color: #f1f1f1;
+        text-align: center;
+    }
+}
+
+@media (min-width: 800px) {
+    body {
+        background: lightskyblue;
+    }
+    
+    div {
+        padding: 25px 50px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: dodgerblue;
+        padding: 10px;
+    }
+    .container div {
+        background-color: #f1f1f1;
+        border: 1px solid black;
+        padding: 10px;
+        font-size: 30px;
+        text-align: center;
+    }
+    
+}
