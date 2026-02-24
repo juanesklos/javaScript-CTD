@@ -110,3 +110,50 @@ messageForm[0].addEventListener('submit', function(event) {
 
 
 });
+
+
+//******************************* */
+//Fetch API
+
+fetch('https://api.github.com/users/juanesklos/repos', {
+  method:'GET',
+  headers: {
+    'Content-type': 'application/json'
+  }
+})
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error(`GitHub API error: ${response.status} ${response.statusText}`);
+    }
+    return response.json();
+  })
+  .then((repositories) => {
+    console.log("repositories:", repositories);
+    const projectSection = document.getElementById("projects");
+    const projectList = projectSection.querySelector("ul");
+    projectList.style.background = "salmon";
+    projectList.style.backgroundColor = "salmon";
+    projectList.style.display = "flex";
+    projectList.style.flexDirection = "column";
+    projectList.style.alignItems = "flex-start";
+    projectList.style.listStyleType = "disc";
+    projectList.style.paddingLeft = "20px";
+    //console.log(projectSection);
+    //console.log(projectList);
+
+    projectList.innerHTML = "";
+    for (let i = 0; i < repositories.length; i++) {
+      const project = document.createElement("li");
+      project.innerText = repositories[i].name;
+      projectList.appendChild(project);
+    }
+  })
+  .catch((error) => {
+    console.error("Fetch error:", error);
+    const projectSection = document.getElementById("projects");
+    const projectList = projectSection.querySelector("ul");
+
+    const errorItem = document.createElement("li");
+    errorItem.innerText = "Unable to load projects right now. Please try again later.";
+    projectList.appendChild(errorItem);
+  });
