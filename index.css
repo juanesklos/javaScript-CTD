@@ -1,16 +1,18 @@
+/*Style for header*/
 header {
   background-color: #f6f7f5;
   text-align: center;
   padding: 10px;
 }
 
-/* style.css */
+/* import style from google api*/
 @import url('https://fonts.googleapis.com');
 /*
     Change the background color of the page body.
     Change the default text color.
     STRETCH GOAL (optional):load in a font family from Google Fonts.
 */
+/*Style for body*/
 body {
     font-family: 'Roboto', sans-serif;
     background-color: lightblue;
